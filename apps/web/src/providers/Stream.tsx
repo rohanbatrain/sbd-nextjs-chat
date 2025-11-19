@@ -120,9 +120,9 @@ const StreamSession = ({
   );
 };
 
-// Default values for the form
-const DEFAULT_API_URL = "http://localhost:2024";
-const DEFAULT_ASSISTANT_ID = "agent";
+// Default values for the form (updated to use SecondBrainDatabase defaults)
+const DEFAULT_API_URL = "http://localhost:8000"; // Second Brain Database FastAPI
+const DEFAULT_ASSISTANT_ID = "SecondBrainDatabase";
 
 export const StreamProvider: React.FC<{ children: ReactNode }> = ({
   children,

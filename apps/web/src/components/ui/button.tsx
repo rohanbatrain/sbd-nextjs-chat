@@ -49,11 +49,14 @@ function Button({
 }: ButtonProps) {
   const Comp = asChild ? Slot : "button";
 
+  const compProps = { ...props } as Record<string, any>;
+  if (compProps.hasOwnProperty("asChild")) delete compProps.asChild;
+
   return (
     <Comp
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
-      {...props}
+      {...compProps}
     />
   );
 }
