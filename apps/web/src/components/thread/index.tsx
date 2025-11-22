@@ -35,6 +35,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "../ui/tooltip";
+import { DocumentUploadButton } from "../chat/DocumentUploadButton";
 
 function StickyToBottomContent(props: {
   content: ReactNode;
@@ -407,7 +408,15 @@ export function Thread() {
                     />
 
                     <div className="flex items-center justify-between p-2 pt-4">
-                      <div>
+                      <div className="flex items-center gap-2">
+                        <DocumentUploadButton
+                          onUploadComplete={(documentId, filename, chunks) => {
+                            toast.success(`Uploaded ${filename}`, {
+                              description: `Indexed with ${chunks} chunks. You can now ask questions about this document.`,
+                            });
+                          }}
+                          disabled={isLoading}
+                        />
                         <div className="flex items-center space-x-2">
                           <Switch
                             id="render-tool-calls"
