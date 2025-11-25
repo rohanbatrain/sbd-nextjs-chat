@@ -1,6 +1,6 @@
 # sbd-nextjs-chat
 
-The **Chat Module** is a sophisticated conversational interface for the Second Brain Database. It leverages LLMs and RAG (Retrieval-Augmented Generation) to allow users to interact with their knowledge base naturally.
+The **Chat Module** is a sophisticated conversational interface for the Second Brain Database. It leverages LLMs and RAG (Retrieval-Augmented Generation) to allow users to interact with their knowledge base naturally. Taken from 
 
 ## Features
 
@@ -47,6 +47,6 @@ The **Chat Module** is a sophisticated conversational interface for the Second B
 -   `pnpm lint`: Lint all packages.
 -   `pnpm format`: Format code.
 
-## License
+## License & Credits
 
-Private
+https://github.com/langchain-ai/agent-chat-ui
