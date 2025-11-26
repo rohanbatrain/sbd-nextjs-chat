@@ -8,8 +8,6 @@
     "build": "turbo build:internal --filter=web",
     "build:internal": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
