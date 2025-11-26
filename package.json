@@ -7,8 +7,11 @@
     "build": "turbo build",
     "turbo:command": "turbo",
     "format": "turbo format",
-    "lint": "turbo lint",
-    "lint:fix": "turbo lint:fix"
+    "lint": "turbo lint --max-warnings=0",
+    "lint:fix": "next lint --fix",
+    "type-check": "turbo type-check",
+    "test": "turbo test",
+    "prepare": "husky || true"
   },
   "devDependencies": {
     "turbo": "latest",
@@ -24,7 +27,10 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-no-instanceof": "^1.0.1",
     "eslint-plugin-prettier": "^5.2.3",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
+    "husky": "^9.0.11"
   },
   "resolutions": {
     "@langchain/core": "^0.3.42"
