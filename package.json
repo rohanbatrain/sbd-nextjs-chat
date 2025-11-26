@@ -9,7 +9,8 @@
     "format": "turbo format",
     "lint": "turbo lint --max-warnings=0",
     "lint:fix": "next lint --fix",
-    "type-check": "tsc --noEmit",
+    "type-check": "turbo type-check",
+    "test": "turbo test",
     "prepare": "husky || true"
   },
   "devDependencies": {
